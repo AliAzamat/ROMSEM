@@ -1,0 +1,44 @@
+.reviews {
+  &__row {
+    @include flex(center, space-between);
+  }
+  &__title {
+    @include font(24px, 500);
+    color: $text-black;
+  }
+  &__button {
+    padding: 7px 17px;
+    background: #111111;
+    border-radius: 5px;
+    border: none;
+    @include font(18px, normal);
+    color: $text-light-gray;
+    cursor: pointer;
+  }
+}
+.review {
+  padding-top: 40px;
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  &__name {
+    @include font(24px, 500);
+  }
+  &__date {
+    margin-left: 20px;
+    @include font(18px, 500);
+    color: $text-gray;
+  }
+  &__description {
+    margin-top: 20px;
+    @include font(18px, normal);
+    color: $text-black;
+  }
+}

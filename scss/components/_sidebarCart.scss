@@ -1,0 +1,55 @@
+.sidebar-cart {
+  padding: 55px 100px 55px 40px;
+  min-width: 430px;
+  &__empty {
+    background: $bg-light-gray;
+    border-radius: 5px;
+    max-width: 290px;
+    padding: 10px 0 0;
+    text-align: center;
+  }
+  h3 {
+    @include font(24px, 500);
+    color: $text-black;
+    margin-bottom: 10px;
+  }
+  span {
+    @include font(18px, 400);
+    color: $text-gray;
+  }
+  &__delivery {
+    @include font(14px, 400);
+    background: $bg-orange;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    color: $text-light-gray;
+  }
+}
+
+.sidebar-map {
+  position: relative;
+  margin-top: 20px;
+  max-width: 290px;
+  text-align: center;
+  background: $bg-light-gray;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 7px;
+  &__geo {
+    @include flex(center, center);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: $bg-orange;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h4 {
+    @include font(24px, 500);
+    margin-top: 40px;
+    color: $text-black;
+  }
+}

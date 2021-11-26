@@ -1,0 +1,91 @@
+.footer {
+  padding: 30px 100px 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid $bg-gray;
+    padding-top: 20px;
+  }
+  &-item {
+    width: 33.33%;
+    padding-bottom: 60px;
+  }
+  &-nav {
+    &__item {
+      margin-top: 20px;
+    }
+    &__link {
+      @include font(18px, 400);
+      color: $text-black;
+      position: relative;
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        transform: scale(0);
+        background-color: $bg-black;
+        transition: 0.3s;
+      }
+      &:hover {
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  &-contacts {
+    border-right: 2px solid $bg-gray;
+    border-left: 2px solid $bg-gray;
+    box-sizing: border-box;
+    padding: 0 40px;
+    &__title {
+      @include font(18px, 500);
+      color: $text-black;
+    }
+    input {
+      @include font(18px, 500);
+      color: $text-gray;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      margin: 10px 0 20px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+    &__icons {
+      margin-top: 10px;
+      display: flex;
+    }
+    &__item {
+      margin-right: 30px;
+      opacity: 0.3;
+      transition: 0.2s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__description {
+      @include font(18px, 400);
+      color: $text-gray;
+    }
+  }
+  &-numbers {
+    padding: 0 40px 40px;
+    box-sizing: border-box;
+    &__link {
+      @include font(18px, 400);
+      color: $text-gray;
+    }
+  }
+}

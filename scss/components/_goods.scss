@@ -1,0 +1,124 @@
+.goods {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 43px;
+      margin-right: 20px;
+    }
+    h3 {
+      @include font(36px, 400);
+      color: $text-black;
+    }
+  }
+  &-sort {
+    position: relative;
+    background-color: $bg-white;
+    // box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.09);
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+    &__label {
+      @include font(14px, 300);
+      color: $text-gray;
+    }
+    &__current {
+      @include font(18px, 400);
+      display: inline-block;
+      color: $text-black;
+    }
+    &__wrapper {
+      position: relative;
+      z-index: 1;
+      min-width: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        margin-left: 30px;
+      }
+    }
+    ul {
+      position: absolute;
+      top: -20px;
+      left: -15px;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      background-color: $bg-white;
+      border-radius: 0 0 15px 15px;
+      padding: 10px 15px;
+      transition: 0.2s;
+      box-shadow: 0 20px 18px 6px rgba(0, 0, 0, 0.09);
+      &.active {
+        top: 20px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &__item {
+      @include font(18px, 400);
+      margin-top: 20px;
+      &_active {
+        color: $text-orange;
+      }
+      &:first-of-type {
+        border-top: 2px solid $bg-gray;
+        padding-top: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -21px;
+  }
+  .col-4 {
+    padding: 21px;
+    box-sizing: border-box;
+  }
+  &-item {
+    padding: 10px 10px;
+    background-color: $bg-white;
+
+    img {
+      width: 100%;
+    }
+    h3 {
+      @include font(24px, 500);
+      color: $text-black;
+      margin-bottom: 30px;
+    }
+    p {
+      @include font(18px, 400);
+      color: $text-gray;
+      margin-bottom: 20px;
+    }
+    div {
+      @include flex(center,space-between);
+      padding-top: 10px;
+      border-top: 2px solid $bg-gray;
+    }
+    span {
+      @include font(24px, 500);
+      color: $text-black;
+    }
+    button {
+      @include font(24px,500);
+      padding: 5px 40px;
+      background: #f46d40;
+      border-radius: 5px;
+      color: #f2f2f2;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

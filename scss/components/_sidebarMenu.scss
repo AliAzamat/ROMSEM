@@ -1,0 +1,76 @@
+.sidebar-menu {
+    display: inline-block;
+    padding: 25px 50px;
+    hr {
+     width: 180px;
+     height: 1px;
+     background-color: $bg-gray; 
+     border: none;
+    }
+}
+
+.logo {
+    margin-bottom: 30px;
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        color: black;
+    }
+
+     &__img {
+         width: 100px;
+         height: 100px;
+     }
+
+
+}
+
+.nav {
+    &__list {
+        padding: 30px;
+    }
+    &__item {
+        @include flex (center);
+        margin-bottom: 30px;
+
+        &_locked  {
+            .nav__soon {
+                display: inline;
+            }
+        }
+    }
+    
+    &__icon {
+        margin-right: 20px;
+    }
+    &__link {
+        @include font(24px,400);
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        white-space: nowrap;
+    }
+    &__soon {
+        @include font(11px,400); 
+        display: none;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        transform: translate(0,-50%);
+        background: $bg-red;
+        border-radius: 10px;
+        padding: 2px 8px;
+        text-transform: uppercase;
+        color: $text-white;
+    }
+
+}

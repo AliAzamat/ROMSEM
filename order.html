@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romsem</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" sizes="16x16" href="./img/logo.png">
+</head>
+
+<body>
+    <div class="order">
+        <header class="header">
+            <a href="./index.html" class="back">
+                <img src="./img/back.svg" alt="">
+                Продолжить выбор
+            </a>
+            <div class="contacts">
+                <h6 class="contacts__title">Наш телефон</h6>
+                <span class="contacts__phone"> +996 705 188 955</span>
+                <span class="contacts__phone"> +996 555 188 955</span>
+                <div class="contacts__time">
+                    <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
+                    <span> работаем с 10:00 до 00:00 </span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="order-form">
+                    <h3 class="order-form__title">Ваши данные</h3>
+                    <div class="col-6">
+                        <div class="order-form__item">
+                            <input type="text" placeholder="Телефон">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="order-form__item">
+                            <label>
+                                <input name="payment-method" type="radio">
+                                <span>Наличными</span>
+                            </label>
+                            <label>
+                                <input name="payment-method" type="radio">
+                                <span>Картой</span>
+                            </label>
+                        </div>
+                        <div class="order-form__item">
+                            <input type="radio">
+                            <span>Подготовить сдачу с</span>
+                            <input type="text" placeholder="Сумма">
+                        </div>
+                        <div class="order-form__item">
+                            <span>Палочки + соусник обычные</span>
+                            <div>
+                                <span>-</span>
+                                <span>10</span>
+                                <span>+</span>
+                            </div>
+                        </div>
+                        <div class="order-form__item">
+                            <span>Палочки + соусник обычные</span>
+                            <div>
+                                <span>-</span>
+                                <span>10</span>
+                                <span>+</span>
+                            </div>
+                        </div>
+                        <input class="promocode" type="text" placeholder="Введите промокод">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
