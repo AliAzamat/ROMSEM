@@ -64,12 +64,18 @@ main {
 }
 .col-6 {
   width: 50%;
+  @include mobile {
+    width: 100%;
+  }
 }
 .col-4 {
   width: 33.33%;
 }
 .col-3 {
   width: 25%;
+  @include mobile {
+    width: 50%;
+  }
 }
 .row {
   display: flex;

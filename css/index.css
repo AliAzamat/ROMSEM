@@ -1324,12 +1324,24 @@ main {
   width: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
 .col-4 {
   width: 33.33%;
 }
 
 .col-3 {
   width: 25%;
+}
+
+@media screen and (max-width: 576px) {
+  .col-3 {
+    width: 50%;
+  }
 }
 
 .row {
