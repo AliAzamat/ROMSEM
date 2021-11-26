@@ -94,3 +94,9 @@
     }
   }
 }
+
+.about  {
+  @include mobile {
+    padding-bottom: 0;
+  }
+}

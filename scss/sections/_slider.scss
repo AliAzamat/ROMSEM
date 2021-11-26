@@ -19,3 +19,9 @@
     }
   }
 }
+
+.slider {
+  @include mobile {
+    display: none;
+  }
+}
