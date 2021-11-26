@@ -1,0 +1,35 @@
+.support {
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    @include font(16px, 150%, 700);
+    color: $text-black;
+  }
+  &__row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  &__item {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 32px 32px;
+    box-sizing: border-box;
+    h4 {
+      text-align: left;
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+  }
+  &__img{
+      display: block;
+      margin: auto;
+  }
+  &__description{
+      margin-top: 16px;
+      @include font(14px,150%);
+      
+  }
+}

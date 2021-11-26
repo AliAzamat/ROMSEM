@@ -4,8 +4,11 @@
     hr {
      width: 180px;
      height: 1px;
-     background-color: $bg-gray; 
+     background-color: $bg-gray;
      border: none;
+    }
+    @include mobile {
+        display: none;
     }
 }
 
@@ -48,7 +51,7 @@
             }
         }
     }
-    
+
     &__icon {
         margin-right: 20px;
     }
@@ -60,7 +63,7 @@
         white-space: nowrap;
     }
     &__soon {
-        @include font(11px,400); 
+        @include font(11px,400);
         display: none;
         position: absolute;
         right: -10px;
@@ -72,5 +75,4 @@
         text-transform: uppercase;
         color: $text-white;
     }
-
 }

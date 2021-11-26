@@ -1,0 +1,47 @@
+.header {
+  margin: auto;
+  max-width: 90%;
+  &__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__description {
+    width: 40%;
+    @include font(12px, 20px,);
+    color: $text-black;
+  }
+  &__number {
+    margin-right: 35px;
+    @include font(16px, 18px,bold);
+    color: $text-black;
+  }
+  &__button {
+    @include button(16px 32px);
+    @include font(16px, 18px,bold);
+    color: $text-white;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  &__description {
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3b1d8f;
+  }
+}

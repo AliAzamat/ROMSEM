@@ -1,0 +1,48 @@
+.advantage {
+  &__content{
+      display: flex;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__picture {
+    h5 {
+      transform: translateY(700%);
+      margin-left: 72px;
+      color: $text-white;
+    }
+  }
+  &__text{
+      margin-top: 50px;
+      margin-left: 80px;
+      h5{
+          color: #34449C;
+      }
+      .description{
+          padding-top: 0px;
+          margin-bottom: 24px;
+          width: 45%;
+      }
+  }
+}
+.question {
+  position: absolute;
+  transform: translateY(-390%);
+  margin-left: 75px;
+  padding: 20px 20px;
+  display: inline-block;
+  background: linear-gradient(326.06deg, #f0ebff 11.53%, #ffffff 74.32%);
+  box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.78);
+  border-radius: 11.9362px;
+  &__title {
+    @include font(12px, 16px, 700);
+    color: $text-black;
+    padding-bottom: 10px;
+  }
+  &__button{
+      @include button(16px 22px,8px,linear-gradient(326.06deg, #2641D1 11.53%, #3333A3 74.32%));
+      @include font(12px,14px,700);
+      color: $text-white;
+  }
+}

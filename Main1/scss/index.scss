@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './sections/support';
+@import "./sections/advantage";
+@import "./sections/team";
+@import "./sections/policy";
+@import "./sections/header";
+@import "./sections/tariffs";
+@import "./sections/partners";
+@import "./sections/offers";
+@import "./sections/forecast";
+@import "./sections/expert";
+@import "./sections/footer";
+
+body{
+    margin: 0;
+    background: #E5E5E5;
+    &__wrapper{
+        max-width: 1520px;
+        margin: auto;
+    }
+}
+.col-4{
+    width:33.33%;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    background-color: #DEE6EF;
+    margin-top: 60px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+h2{
+    @include font(32px,44px,700);
+    color: $text-black;
+}
+.description{
+    @include font(14px, 150%);
+}
+.sirius__name{
+    @include font(16px,44px,bold);
+    letter-spacing: 0.17em;
+}
+button{
+    transition: 0.3s;
+}
+button:hover{
+    color: $text-blue;
+    background: $bg-white;
+}

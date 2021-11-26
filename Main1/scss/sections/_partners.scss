@@ -1,0 +1,15 @@
+.partner{
+    margin-top: 125px;
+    padding: 90px 850px 205px 200px;
+    background-image: url(/img/partners.jpg);
+    background-size: cover;
+    h2{
+        color: $text-white;
+    }
+    p{
+        @include font(16px,150%);
+        color: $text-white;
+        margin-top: 16px;
+        width: 67%;
+    }
+}

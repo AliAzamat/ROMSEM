@@ -1,0 +1,132 @@
+.offers {
+  margin-top: 75px;
+  &-button {
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    @include button(16px 32px);
+    @include font(16px, 18px, 700);
+    color: $text-white;
+  }
+  &__wrapper {
+    margin-bottom: 32px;
+  }
+  &-item {
+    padding: 48px 160px;
+    display: flex;
+    margin-bottom: 16px;
+    background: #ffffff;
+    border-radius: 20px;
+    &__text {
+      margin-left: 32px;
+      &_far {
+        margin-left: 64px;
+      }
+    }
+    &__title {
+      @include font(16px, 36px, 700);
+    }
+    &__description {
+      padding-top: 10px;
+      @include font(14px, 20px);
+      width: 80%;
+      &_wide {
+        @include font(14px, 20px);
+        width: 88%;
+      }
+    }
+    &__explain {
+      padding-top: 16px;
+      width: 85%;
+      @include font(14px, 20px);
+      &_gray {
+        padding-top: 16px;
+        @include font(14px, 20px);
+        color: $text-light-gray;
+      }
+    }
+    span {
+      @include font(14px, 20px, 700);
+    }
+    ul {
+      padding-top: 16px;
+      margin-left: 24px;
+    }
+    li {
+      @include font(14px, 20px);
+    }
+  }
+}
+.plan {
+  &__title {
+    margin-top: 144px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__table {
+      width: 27%;
+    }
+  }
+  &-item {
+    padding: 32px 32px;
+    margin-bottom: 16px;
+    width: 27%;
+    background: #ffffff;
+    box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+    border-radius: 20px;
+    margin-left: 64px;
+    &_column {
+      padding: 32px 32px;
+      margin-bottom: 16px;
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+      border-radius: 20px;
+    }
+    &_right {
+      padding: 32px 32px;
+      margin-bottom: 16px;
+      width: 27%;
+      height: 252px;
+      background: #ffffff;
+      box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+      border-radius: 20px;
+    }
+    &__title {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      @include font(16px, 36px, 700);
+    }
+    &__description {
+      @include font(14px, 20px);
+    }
+    &__img {
+        padding-top: 47px;
+      padding-bottom: 32px;
+      img{
+          display: block;
+          margin: auto;
+      }
+    }
+    &__button {
+      @include button(16px 32px);
+      @include font(16px, 18px, 700);
+      color: $text-white;
+      margin-top: 16px;
+    }
+  }
+  &__ellipse {
+    border-radius: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px 17px;
+  }
+  .number {
+    @include font(14px, 30px, 700);
+  }
+}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +11,7 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" sizes="16x16" href="./img/logo.png">
+    <link rel="icon" sizes="16x16" href="./img/logo.png" />
   </head>
   <body>
     <div class="wrapper">
@@ -93,13 +94,20 @@
 
       <div class="wrapper__content">
         <header class="header">
+          <div class="header__logo">
+            <a href="./index.html">
+              <img src="./img/logo-mobile.png" alt="romsem">
+            </a>
+          </div>
           <div class="contacts">
-            <h6 class="contacts__title">Наш телефон</h6>
-            <span class="contacts__phone"> +996 705 188 955</span>
-            <span class="contacts__phone"> +996 555 188 955</span>
+            <div class="contacts__numbers">
+              <h6 class="contacts__title">Наш телефон</h6>
+              <span class="contacts__phone"> +996 705 188 955</span>
+              <span class="contacts__phone"> +996 555 188 955</span>
+            </div>
             <div class="contacts__time">
               <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
-              <span> работаем с 10:00 до 00:00 </span>
+              <span class="contacts__work-time"><span>работаем</span> с 10:00 до 00:00 </span>
             </div>
           </div>
           <div class="header__right">
@@ -392,7 +400,7 @@
           <img height="116" src="./img/map.jpg" alt="map" />
           <div>
             <div class="sidebar-map__geo">
-              <img src="./img/geolocation.svg" alt="geolocation">
+              <img src="./img/geolocation.svg" alt="geolocation" />
             </div>
             <h4>Укажите адрес</h4>
             <span>И узнайте время доставки</span>

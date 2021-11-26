@@ -1,0 +1,33 @@
+.forecast {
+  margin-bottom: 144px;
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 80px;
+  margin-top: 128px;
+  background: $bg-blue;
+  &__title {
+    color: $text-white;
+    width: 45%;
+  }
+  &-info {
+    &:last-of-type {
+      margin-right: 0;
+    }
+    margin-right: 16px;
+    display: inline-block;
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  h5 {
+    text-align: center;
+    @include font(32px, 150%, bold);
+    @include gradient;
+  }
+  span {
+    @include font(14px, 20px);
+    color: $text-white;
+  }
+}

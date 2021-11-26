@@ -25,6 +25,11 @@
     margin-top: 30px;
     color: $text-light-gray;
   }
+
+
+  @include mobile() {
+    display: none;
+  }
 }
 
 .sidebar-map {

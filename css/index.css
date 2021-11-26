@@ -11,6 +11,12 @@
   border: none;
 }
 
+@media screen and (max-width: 576px) {
+  .sidebar-menu {
+    display: none;
+  }
+}
+
 .logo {
   margin-bottom: 30px;
 }
@@ -117,6 +123,10 @@
   width: 83.33%;
 }
 
+.header__logo {
+  display: none;
+}
+
 .header__city span {
   font-style: normal;
   font-weight: 300;
@@ -213,6 +223,90 @@
   color: #a4acad;
   margin-left: 5px;
   white-space: nowrap;
+}
+
+.contacts__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background: #fff;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__city {
+    display: none;
+  }
+  .header__logo {
+    display: block;
+  }
+  .header__logo img {
+    margin-left: 17px;
+    width: 50px;
+    height: 50px;
+  }
+  .header__nav ul {
+    display: none;
+  }
+  .header__search {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-right: none;
+  }
+  .contacts__phone, .contacts__title {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .contacts__time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .contacts__time img {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+  }
+  .contacts__time span {
+    font-size: 12px;
+  }
+  .contacts__work-time {
+    white-space: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .slider .swiper {
@@ -715,6 +809,12 @@
   padding: 10px 30px;
   margin-top: 30px;
   color: #f2f2f2;
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar-cart {
+    display: none;
+  }
 }
 
 .sidebar-map {

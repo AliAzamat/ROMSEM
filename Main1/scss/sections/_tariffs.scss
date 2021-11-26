@@ -1,0 +1,136 @@
+.tariffs {
+  &__title {
+    text-align: center;
+    margin-top: 45px;
+  }
+  &__description {
+    @include font(14px, 150%);
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  &__button {
+    @include button(10px 28px);
+    @include font(20px, 30px, 700);
+    color: $text-white;
+    margin-right: 64px;
+  }
+  h3 {
+    @include font(20px, 30px, 700);
+    color: $text-blue;
+    border-bottom: 1px dashed #2741cf;
+  }
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 20px;
+    width: 48.6%;
+    margin-bottom: 32px;
+    padding: 48px 48px;
+    box-sizing: border-box;
+    h4{
+      text-align: left;
+      padding-top: 0;
+    }
+    h5{
+      text-align: left;
+    }
+    p{
+      text-align: left;
+    }
+    .feature__description{
+      margin-left: 8px;
+    }
+    .cabinet{
+      justify-content: left;
+      &__button{
+        margin: unset;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.start {
+  background: #ffffff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0px 0px 45px 0px;
+  margin-bottom: 32px;
+  &__header {
+    text-align: center;
+    padding-top: 48px;
+    @include font(16px, 30px, 700);
+    color: $text-blue;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  &__title {
+    padding-top: 8px;
+    text-align: center;
+    color: $text-light-gray;
+    letter-spacing: 0.05em;
+  }
+  &__descr {
+    text-align: center;
+    color: $text-gray;
+    @include font(14px, 30px);
+    padding-top: 16px;
+  }
+  &__caption {
+    padding-top: 16px;
+    @include font(16px, 30px, 700);
+    text-align: center;
+  }
+}
+.features {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  &__tableone {
+    margin-right: 25px;
+  }
+  &__tabletwo {
+    width: 25%;
+  }
+}
+.feature {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  &__description {
+    margin-left: 5px;
+    @include font(16px, 1.5);
+  }
+  &__img {
+    padding-bottom: 24px;
+  }
+}
+.cabinet {
+  display: flex;
+  @include font(16px, 40px, 700);
+  color: $text-blue;
+  margin-top: -10px;
+  justify-content: center;
+  &__caption {
+    margin-right: 16px;
+  }
+  &__button {
+    @include button(16px 32px);
+    @include font(16px, 18px, 700);
+    color: $text-white;
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+  }
+}
