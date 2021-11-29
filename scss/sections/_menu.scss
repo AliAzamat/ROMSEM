@@ -1,5 +1,8 @@
 .menu {
   padding-top: 30px;
+  &.mobile {
+    display: none;
+  }
   .row {
     margin: 0 -15px;
   }
@@ -32,6 +35,24 @@
 
 .menu {
   @include mobile {
-    padding-top: 0;
+    &.mobile {
+      display: block;
+      .menu-item {
+        &__title {
+          bottom: auto;
+          top: 10px;
+        }
+      }
+    }
+    padding-top: 15px;
+    .row {
+      margin: 0 -5px;
+    }
+    &-item {
+      margin: 5px;
+      &__title {
+        font-size: 18px;
+      }
+    }
   }
 }

@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Romsem - Ваше счастье в рыбах" />
+    <meta
+      property="og:description"
+      content="Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом, приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете заказать суши в Харькове с доставкой на дом или в офис."
+    />
+    <meta
+      property="og:image"
+      content="https://yuzeyzertest.github.io/romsem/img/og-image.jpg"
+    />
     <title>Romsem</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" sizes="16x16" href="./img/logo.png">
 </head>
-
 <body>
-    <div class="order">
+
+    <div class="mobile-cart">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">
+                <img src="./img/mobile-menu.svg" alt="Меню">
+                <span>Меню</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/mobile-cart.svg" alt="Корзина">
+                <span>Корзина</span>
+              </a>
+            </li>
+            <li>
+              <a href="./reviews.html">
+                <img src="./img/mobile-reviews.svg" alt="Отзывы">
+                <span>Отзывы</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    <div class="oreder">
         <header class="header">
             <a href="./index.html" class="back">
-                <img src="./img/back.svg" alt="">
+                <img src="./img/back.svg" alt="Продолжить выбор">
                 Продолжить выбор
             </a>
             <div class="contacts">
@@ -22,16 +59,17 @@
                 <span class="contacts__phone"> +996 705 188 955</span>
                 <span class="contacts__phone"> +996 555 188 955</span>
                 <div class="contacts__time">
-                    <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
-                    <span> работаем с 10:00 до 00:00 </span>
+                  <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
+                  <span> работаем с 10:00 до 00:00 </span>
                 </div>
-            </div>
+              </div>
         </header>
-
         <main>
             <section>
                 <form class="order-form">
-                    <h3 class="order-form__title">Ваши данные</h3>
+                    <h3 class="order-form__title">
+                        Ваши данные
+                    </h3>
                     <div class="col-6">
                         <div class="order-form__item">
                             <input type="text" placeholder="Телефон">
@@ -50,7 +88,7 @@
                         <div class="order-form__item">
                             <input type="radio">
                             <span>Подготовить сдачу с</span>
-                            <input type="text" placeholder="Сумма">
+                            <input type="text" placeholder="Сумма"/>
                         </div>
                         <div class="order-form__item">
                             <span>Палочки + соусник обычные</span>
@@ -68,12 +106,11 @@
                                 <span>+</span>
                             </div>
                         </div>
-                        <input class="promocode" type="text" placeholder="Введите промокод">
+                        <input type="text" placeholder="Введите промокод"/>
                     </div>
                 </form>
             </section>
         </main>
     </div>
 </body>
-
 </html>

@@ -11,9 +11,10 @@
 @import "./sections/about";
 @import "./components/footer";
 @import "./components/sidebarCart";
-@import "./components/reviews";
 @import "./components/goods";
-@import "../pages/order";
+@import "./pages/order.scss";
+@import "./components/mobile-cart";
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -49,7 +50,11 @@ a {
     width: 100%;
     background-color: $bg-light-gray;
   }
+  @include mobile {
+    overflow: hidden;
+  }
 }
+
 main {
   padding: 30px 100px;
   max-width: 1170px;
@@ -70,6 +75,9 @@ main {
 }
 .col-4 {
   width: 33.33%;
+  @include mobile {
+    width: 100%;
+  }
 }
 .col-3 {
   width: 25%;

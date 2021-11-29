@@ -122,3 +122,27 @@
     }
   }
 }
+
+.goods {
+  @include mobile {
+    &__header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0 0;
+    }
+    &__title {
+      img {
+        width: 27px;
+        height: 29px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+    }
+    &-sort {
+      margin-top: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

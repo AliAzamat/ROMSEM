@@ -4,11 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Romsem - Ваше счастье в рыбах" />
+    <meta
+      property="og:description"
+      content="Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом, приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете заказать суши в Харькове с доставкой на дом или в офис."
+    />
+    <meta
+      property="og:image"
+      content="https://yuzeyzertest.github.io/romsem/img/og-image.jpg"
+    />
     <title>ROMSEM</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" sizes="16x16" href="./img/logo.png">
   </head>
   <body>
+
+
+    <div class="mobile-cart">
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./img/mobile-menu.svg" alt="Меню">
+              <span>Меню</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/mobile-cart.svg" alt="Корзина">
+              <span>Корзина</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reviews.html">
+              <img src="./img/mobile-reviews.svg" alt="Отзывы">
+              <span>Отзывы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
     <div class="wrapper">
       <aside class="sidebar-menu">
         <div class="logo">
@@ -89,13 +126,22 @@
 
       <div class="wrapper__content">
         <header class="header">
+          <div class="header__logo">
+            <a href="./index.html">
+              <img src="./img/logo-mobile.png" alt="romsem" />
+            </a>
+          </div>
           <div class="contacts">
-            <h6 class="contacts__title">Наш телефон</h6>
-            <span class="contacts__phone"> +996 705 188 955</span>
-            <span class="contacts__phone"> +996 555 188 955</span>
+            <div class="contacts__numbers">
+              <h6 class="contacts__title">Наш телефон</h6>
+              <span class="contacts__phone"> +996 705 188 955</span>
+              <span class="contacts__phone"> +996 555 188 955</span>
+            </div>
             <div class="contacts__time">
               <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
-              <span> работаем с 10:00 до 00:00 </span>
+              <span class="contacts__work-time"
+                ><span>работаем</span> с 10:00 до 00:00
+              </span>
             </div>
           </div>
           <div class="header__right">
