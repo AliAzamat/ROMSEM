@@ -815,7 +815,7 @@
 
 @media screen and (max-width: 576px) {
   .footer {
-    padding: 0 20px 30px;
+    padding: 0 20px 100px;
   }
   .footer__row {
     border: none;
@@ -1283,6 +1283,132 @@
   .mobile-cart {
     display: block;
   }
+}
+
+.reviews__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.reviews__button {
+  padding: 7px 17px;
+  background: #111111;
+  border-radius: 5px;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.review {
+  padding-top: 40px;
+}
+
+.review__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__item {
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.review__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.review__date {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #a4acad;
+}
+
+.review__description {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.ways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ways__back, .ways__next {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ways span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff9846;
+}
+
+.ways__back span {
+  margin-right: 10px;
+}
+
+.ways__next span {
+  margin-left: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 body {
