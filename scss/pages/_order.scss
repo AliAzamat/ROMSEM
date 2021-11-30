@@ -1,0 +1,131 @@
+.order {
+  background: $bg-light-gray;
+  min-height: 100vh;
+  .header {
+    justify-content: center;
+    .back {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 100px;
+      top: 50px;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .contacts {
+      border: none;
+    }
+  }
+  &-form {
+    margin: auto;
+    max-width: 760px;
+    &__wrapper {
+      display: flex;
+    }
+    .col-6 {
+      margin-right: 40px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    &__title {
+      margin-bottom: 30px;
+      @include font(24px, 500);
+    }
+    input {
+      @include font(18px, 400);
+      background: #ffffff;
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+      color: $text-gray;
+    }
+    .input {
+      max-width: 40%;
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+    .promocode {
+      width: 356px;
+    }
+    &-counter {
+      display: flex;
+      margin-bottom: 10px;
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+      &__details {
+        margin-right: 20px;
+        white-space: nowrap;
+      }
+      &__amount {
+        display: flex;
+      }
+      &__details,
+      &__count,
+      &__plus,
+      &__minus {
+        @include font(18px, 500);
+      }
+      &__plus,
+      &__minus {
+        color: $bg-black;
+        margin: 0 10px;
+        @include flex(center, center);
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        &:hover {
+          color: $bg-white;
+          background: #f46d40;
+        }
+      }
+      &__minus {
+        margin-left: 40px;
+      }
+    }
+    &__item {
+      margin-bottom: 20px;
+      .street {
+        max-width: 80%;
+        margin-right: 22px;
+      }
+      .house {
+        max-width: 16%;
+      }
+    }
+    &__adress {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .adress {
+        width: 16%;
+      }
+    }
+    .email {
+      width: 100%;
+    }
+  }
+  &__button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 12px;
+    background: #f46d40;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    a{
+        @include font(18px,500);
+        color: $text-white;
+    }
+  }
+  &__description{
+      margin-top: 12px;
+      @include font(14px,500);
+      text-align: center;
+  }
+}

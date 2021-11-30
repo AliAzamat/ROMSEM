@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -81,13 +81,21 @@
 
     <div class="wrapper__content">
       <header class="header">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./img/logo-mobile.png" alt="romsem" />
+          </a>
+        </div>
         <div class="contacts">
-          <h6 class="contacts__title">Наш телефон</h6>
-          <span class="contacts__phone"> +996 705 188 955</span>
-          <span class="contacts__phone"> +996 555 188 955</span>
+          <div class="contacts__numbers">
+            <h6 class="contacts__title">Наш телефон</h6>
+            <span class="contacts__phone"> +996 705 188 955</span>
+            <span class="contacts__phone"> +996 555 188 955</span>
+          </div>
           <div class="contacts__time">
             <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
-            <span> работаем с 10:00 до 00:00 </span>
+            <span class="contacts__work-time"><span>работаем</span> с 10:00 до 00:00
+            </span>
           </div>
         </div>
         <div class="header__right">
@@ -98,7 +106,7 @@
           <nav class="header__nav">
             <ul>
               <li>
-                <a href="#">Отзывы</a>
+                <a href="./reviews.html">Отзывы</a>
               </li>
               <li>
                 <a href="#">Доставка и оплата</a>
@@ -143,6 +151,7 @@
                 Успехов Вам и приятных бонусов нам)</p>
             </div>
           </div>
+          <button class="reviews__button_mobile">+ Добавить отзыв</button>
         </section>
       </main>
 

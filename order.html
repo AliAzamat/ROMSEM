@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Romsem - Ваше счастье в рыбах" />
-    <meta
-      property="og:description"
-      content="Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом, приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете заказать суши в Харькове с доставкой на дом или в офис."
-    />
-    <meta
-      property="og:image"
-      content="https://yuzeyzertest.github.io/romsem/img/og-image.jpg"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romsem</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" sizes="16x16" href="./img/logo.png">
+    <link rel="icon" sizes="16x16" href="./img/logo.png" />
 </head>
+
 <body>
-
-    <div class="mobile-cart">
-        <nav>
-          <ul>
-            <li>
-              <a href="./index.html">
-                <img src="./img/mobile-menu.svg" alt="Меню">
-                <span>Меню</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/mobile-cart.svg" alt="Корзина">
-                <span>Корзина</span>
-              </a>
-            </li>
-            <li>
-              <a href="./reviews.html">
-                <img src="./img/mobile-reviews.svg" alt="Отзывы">
-                <span>Отзывы</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-    <div class="oreder">
+    <div class="order">
         <header class="header">
             <a href="./index.html" class="back">
-                <img src="./img/back.svg" alt="Продолжить выбор">
+                <img src="./img/back.svg" alt="">
                 Продолжить выбор
             </a>
             <div class="contacts">
-                <h6 class="contacts__title">Наш телефон</h6>
-                <span class="contacts__phone"> +996 705 188 955</span>
-                <span class="contacts__phone"> +996 555 188 955</span>
-                <div class="contacts__time">
-                  <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
-                  <span> работаем с 10:00 до 00:00 </span>
+                <div class="contacts__numbers">
+                    <h6 class="contacts__title">Наш телефон</h6>
+                    <span class="contacts__phone"> +996 705 188 955</span>
+                    <span class="contacts__phone"> +996 555 188 955</span>
                 </div>
-              </div>
+                <div class="contacts__time">
+                    <img src="./img/oclock.svg" alt="с 10:00 до 00:00" />
+                    <span class="contacts__work-time"><span>работаем</span> с 10:00 до 00:00
+                    </span>
+                </div>
+            </div>
         </header>
+
         <main>
             <section>
                 <form class="order-form">
-                    <h3 class="order-form__title">
-                        Ваши данные
-                    </h3>
-                    <div class="col-6">
-                        <div class="order-form__item">
-                            <input type="text" placeholder="Телефон">
-                            <input type="text" placeholder="Имя">
-                        </div>
-                        <div class="order-form__item">
-                            <label>
-                                <input name="payment-method" type="radio">
-                                <span>Наличными</span>
-                            </label>
-                            <label>
-                                <input name="payment-method" type="radio">
-                                <span>Картой</span>
-                            </label>
-                        </div>
-                        <div class="order-form__item">
-                            <input type="radio">
-                            <span>Подготовить сдачу с</span>
-                            <input type="text" placeholder="Сумма"/>
-                        </div>
-                        <div class="order-form__item">
-                            <span>Палочки + соусник обычные</span>
-                            <div>
-                                <span>-</span>
-                                <span>10</span>
-                                <span>+</span>
+                    <h3 class="order-form__title">Ваши данные</h3>
+                    <div class="order-form__wrapper">
+                        <div class="col-6">
+                            <div class="order-form__item">
+                                <input class="input" type="text" placeholder="Телефон">
+                                <input class="input" type="text" placeholder="Имя">
                             </div>
-                        </div>
-                        <div class="order-form__item">
-                            <span>Палочки + соусник обычные</span>
-                            <div>
-                                <span>-</span>
-                                <span>10</span>
-                                <span>+</span>
+                            <div class="order-form__item">
+                                <label>
+                                    <input class="input" name="payment-method" type="radio">
+                                    <span>Наличными</span>
+                                </label>
+                                <label>
+                                    <input class="input" type="radio" name="payment-method">
+                                    <span>Картой</span>
+                                </label>
                             </div>
+                            <div class="order-form__item">
+                                <input class="input" type="radio">
+                                <label>
+                                    <span>Подготовить сдачу с</span>
+                                </label>
+                                <input class="input" type="text" placeholder="Сумма">
+                            </div>
+                            <div class="order-form-counter">
+                                <span class="order-form-counter__details">Палочки + соусник обычные</span>
+                                <div class="order-form-counter__amount">
+                                    <span class="order-form-counter__minus">-</span>
+                                    <span class="order-form-counter__count">10</span>
+                                    <span class="order-form-counter__plus">+</span>
+                                </div>
+                            </div>
+                            <div class="order-form-counter">
+                                <span class="order-form-counter__details">Палочки + соусник обычные</span>
+                                <div class="order-form-counter__amount">
+                                    <span class="order-form-counter__minus">-</span>
+                                    <span class="order-form-counter__count">10</span>
+                                    <span class="order-form-counter__plus">+</span>
+                                </div>
+                            </div>
+                            <input class="promocode" type="text" placeholder="Введите промокод">
                         </div>
-                        <input type="text" placeholder="Введите промокод"/>
+                        <div class="col-6">
+                            <div class="order-form__item">
+                                <label>
+                                    <input class="input" name="delivery-method" type="radio">
+                                    <span>Курьером</span>
+                                </label>
+                                <label>
+                                    <input class="input" type="radio" name="delivery-method">
+                                    <span>Самовывоз</span>
+                                </label>
+                            </div>
+                            <div class="order-form__item">
+                                <input class="street" type="text" placeholder="Улица">
+                                <input type="text" class="house" placeholder="Дом">
+                            </div>
+                            <div class="order-form__adress">
+                                <input class="adress" type="text" placeholder="Кв">
+                                <input class="adress" type="text" placeholder="Подъезд">
+                                <input class="adress" type="text" placeholder="Этаж">
+                                <input class="adress" type="text" placeholder="Код">
+                            </div>
+                            <div class="order-form__item">
+                                <label>
+                                    <input class="input" name="time-method" type="radio">
+                                    <span>На сейчас</span>
+                                </label>
+                                <label>
+                                    <input class="input" type="radio" name="time-method">
+                                    <span>На время</span>
+                                </label>
+                            </div>
+                            <input type="text" class="email" placeholder="E-mail(необязательно)">
+                        </div>
                     </div>
+                    <button class="order__button">
+                        <a href="">Оформить заказ</a>
+                    </button>
+                    <p class="order__description">Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку персональных данных в соответствии с Публичной оффертой</p>
                 </form>
             </section>
         </main>
     </div>
 </body>
+
 </html>
