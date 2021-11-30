@@ -1,6 +1,7 @@
 .ways {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
   &__back,
   &__next {
     @include font(18px, 400);
