@@ -2,7 +2,7 @@
   display: flex;
   background-color: $bg-white;
   padding: 20px;
-  &__content{
+  &__content {
     padding-left: 25px;
   }
   img {
@@ -44,15 +44,15 @@
       font-size: 36px;
     }
   }
-  &__details{
-    @include font(18px,500);
+  &__details {
+    @include font(18px, 500);
     margin-bottom: 5px;
   }
-  &__ingredients{
-    @include font(18px,300);
+  &__ingredients {
+    @include font(18px, 300);
   }
-  button{
-    @include font(24px,500);
+  button {
+    @include font(24px, 500);
     margin-top: 30px;
     padding: 5px 40px;
     background: #f46d40;
@@ -60,5 +60,77 @@
     color: #f2f2f2;
     border: none;
     cursor: pointer;
+  }
+}
+
+.recommend {
+  &__title {
+    @include font(24px, 500);
+    color: $text-black;
+    margin: 30px 0 20px;
+    text-align: center;
+  }
+  &__slider {
+    overflow: hidden;
+    text-align: center;
+    &-wrapper{
+      position: relative;
+    }
+  }
+  &-item {
+    &__image {
+      max-width: 200px;
+      height: 200px;
+    }
+    &__title {
+      margin: 10px 0;
+      @include font(18px, 500);
+      color: $text-black;
+    }
+    &__bottom {
+      @include flex(center, center);
+    }
+    &__price {
+      @include font(24px, 700);
+      color: $text-black;
+      margin-right: 10px;
+    }
+    &__price + span {
+      @include flex(center, center);
+      cursor: pointer;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: $bg-dark-orange;
+      color: $text-white;
+    }
+  }
+  &__button-next, &__button-prev {
+    @include flex(center,center);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $bg-black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  &__button-prev{
+    position: absolute;
+    top: 20%;
+    left: -80px;
+    z-index: 1;
+  }
+  &__button-next{
+    position: absolute;
+    top: 20%;
+    right: -80px;
+    z-index: 1;
+  }
+}
+
+.product-cart{
+  @include mobile{
+    
   }
 }

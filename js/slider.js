@@ -22,3 +22,17 @@ const swiper2 = new Swiper('.products-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiper3 = new Swiper('.recommend__slider', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: true,
+  slidesPerView: 3,
+  spaceBetween: 40,
+  speed: 800,
+
+  navigation: {
+    prevEl: '.recommend__button-prev',
+    nextEl: '.recommend__button-next',
+  },
+});

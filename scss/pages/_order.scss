@@ -3,12 +3,21 @@
   min-height: 100vh;
   .header {
     justify-content: center;
+    &__search {
+      display: none;
+      @include mobile {
+        display: block;
+      }
+    }
     .back {
       display: flex;
       align-items: center;
       position: absolute;
       left: 100px;
       top: 50px;
+      @include mobile {
+        display: none;
+      }
       img {
         margin-right: 10px;
       }
@@ -41,6 +50,9 @@
       padding: 10px;
       color: $text-gray;
     }
+    input{
+      outline: none;
+    }
     .input {
       max-width: 40%;
       &:first-of-type {
@@ -62,6 +74,7 @@
       }
       &__amount {
         display: flex;
+        align-items: center;
       }
       &__details,
       &__count,
@@ -107,7 +120,7 @@
       }
     }
     .email {
-      width: 100%;
+      width: 356px;
     }
   }
   &__button {
@@ -118,14 +131,74 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    a{
-        @include font(18px,500);
-        color: $text-white;
+    a {
+      @include font(18px, 500);
+      color: $text-white;
     }
   }
+  &__description {
+    margin-top: 12px;
+    @include font(14px, 500);
+    text-align: center;
+    display: block;
+  }
+}
+
+.order {
+  @include mobile {
+    &-form {
+      &__wrapper{
+        flex-direction: column;
+      }
+      &__title {
+        margin: 10px 0;
+        text-align: center;
+      }
+      &__item{
+        margin-bottom: 10px;
+        .street{
+          min-width: 100%;
+          margin-bottom: 10px;
+        }
+        .house{
+          min-width: 100%;
+        }
+      }
+      .input {
+        max-width: 41%;
+        &:first-of-type {
+          margin-right: 10px;
+        }
+      }
+      .promocode{
+        width: 330px;
+        margin-bottom: 10px;
+      }
+      &-counter{
+        &:last-of-type{
+          margin-bottom: 10px;
+        }
+        &__details{
+          margin-right: 0px;
+        }
+        &__minus{
+          margin-left: 24px;
+        }
+      }
+      &__adress{
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        .adress{
+          width: 42%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  &__button{
+    margin-bottom: 40px;
+  }
   &__description{
-      margin-top: 12px;
-      @include font(14px,500);
-      text-align: center;
+    display: none;
   }
 }
